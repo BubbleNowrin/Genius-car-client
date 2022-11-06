@@ -10,7 +10,7 @@ const PrivateRoutes = ({ children }) => {
     if (loading) {
         return <h2 className='text-5xl'>Loading......</h2>
     }
-    if (user) {
+    if (user && user?.email) {
         return children;
     }
 
